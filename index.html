@@ -6,108 +6,114 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>nft-preview-card-component</title>
     <style>
-    body{
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #F2F2F2;
-      padding:24px;
-      
-    
-    }
-
-   div{
-     
-      width: 350px;
-      height: 596px;
-      background-color: #15263F;
-      border-radius: 15px;
-      overflow: hidden;
-      padding: 24px;
-      
+      body {
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
       }
-      h1{
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        height: 543px;
+
+        background-color: #15263f;
+        border-radius: 15px;
+      }
+      .equilibrium {
+        border-radius: 8px;
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+      }
+      h1 {
         color: white;
-        font-size: 23px
+        font-size: 22px;
+        padding-left: 24px;
       }
-      p{
-        color: #8BACD9;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 26px;
+      .calm {
+        color: #8bacd9;
+        padding-left: 24px;
+        font-size: 18px;
       }
-      p1 {
-        display:inline-block;
-        height: 40px;
-        width: 250px;
-        color: #00FFF8;
-        font-size: 16px;
+      .eter {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        padding-bottom: 3px;
       }
-      p2{
-        color: #8BACD9;
-        font-size: 16px;
+      .eth {
+        padding-left: 24px;
+        display: inline;
+        font-size: 15px;
+        color: #00fff8;
       }
-    img{
-    
-     border-radius: 8px;
-      max-width: 100%;
-       }
+      .prise {
+        display: inline;
+      }
+      .threeday {
+        display: inline;
+        color: #8bacd9;
+      }
+      .days {
+        padding-right: 24px;
+      }
+      .line-1 {
+        height: 1px;
+        background-color: #2e405a;
+        width: 278px;
+        padding-left: 24px;
+      }
+      .img2 {
+        padding-top: 12px;
+        padding-left: 24px;
+        padding-right: 8px;
+        width: 33px;
+        height: 33px;
+      }
 
-  
-       .img2{
-         
-         display:inline;
-         width: 33px;
-         height: 33px;
-         max-width: 100%;
-        
-
-       }
-       .inlineblock{
-         
-         display:inline;
-
-       }
-       p3{
-      //  padding-left: 20px;
-         color:#8BACD9;
-         width: 81px;
-         height: 20px;
-         font-size: 16px;
-         line-height: 20.16px;
-
-       }
-       aside{
-         color:white;
-         font-size: 16px;
-         line-height: 20px;
-      
-       }
-    
-     
+      .creation {
+        display: inline;
+        color: #8bacd9;
+        font-size: 15px;
+        padding-bottom: 16px;
+      }
+      .julius {
+        display: inline;
+        color: white;
+        padding-bottom: 16px;
+      }
     </style>
   </head>
   <body>
-    <div>
-      <img src="./image-equilibrium.jpg "/>
-      <img />
-      
-      
-    <h1>
-      Equilibrium #3429
-    </h1>
-    <p>  Our Equilibrium collection promotes 
-      balance and calm
-       </p>
-      
-    <p1> 0.041 ETH </p1>
-    <p2> 3 days left</p2>
-    
-  
-    
- <img class="img2" src="./image-avatar.png"/>
-    <p3 class ="inlineblock">Creation of</p3>
-    <aside class="inlineblock">Jules Wyvern</aside>
-    <div/>
+    <div class="card">
+      <img class="equilibrium" src="./image-equilibrium.jpg " />
+
+      <h1>
+        Equilibrium #3429
+      </h1>
+      <div class="calm">
+        <p>Our Equilibrium collection promotes</p>
+        <p>balance and calm.</p>
+      </div>
+      <div class="eter">
+        <div class="eth">
+          <img src="./icon-ethereum.svg" />
+          <p class="prise">0.041 ETH</p>
+        </div>
+        <div class="days">
+          <img src="./icon-clock.svg" />
+          <p class="threeday">3 days left</p>
+        </div>
+      </div>
+      <div class="line-1"></div>
+
+      <div class="aside">
+        <img class="img2" src="./image-avatar.png" />
+        <p class="creation">Creation of</p>
+        <p class="julius">Jules Wyvern</p>
+      </div>
+    </div>
   </body>
 </html>
